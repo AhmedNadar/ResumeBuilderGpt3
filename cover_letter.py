@@ -1,3 +1,17 @@
+# This code is a script for generating a cover letter and a professional objective using OpenAI's GPT-3 language model. 
+# The script performs the following steps:
+
+# Import the required libraries: re, json, openai, and time
+# Define two helper functions, open_file and save_file, to read and write the contents of a file respectively.
+# Define load_info function to read and parse the contents of a JSON file 'my_info.json' using the json library.
+# Read the OpenAI API key from a file 'openaiapikey.txt' and set it as the API key for the OpenAI library.
+# Define gpt3_completion function to generate text using the OpenAI's GPT-3 language model. It has several parameters for controlling 
+# the behavior of the language model, including the prompt text, the engine name, temperature, number of tokens, frequency and presence penalties, 
+# and stop words.
+# In the main section, the script calls the load_info function to read the info from the JSON file and formats it as a text block.
+# The script then generates a cover letter and a professional objective by calling the gpt3_completion function with appropriate prompts, 
+# and writes the generated text to separate files.
+
 import re
 import json
 import openai
